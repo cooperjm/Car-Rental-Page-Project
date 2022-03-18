@@ -1,0 +1,92 @@
+{
+	"vehicles": [
+		{
+			"dayPrice": 119,
+			"weekPrice": 699,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/4Runner.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/4Runner-Interior.png",
+			"name": "4Runner",
+			"id": "runner"
+		},
+		{
+			"dayPrice": 99,
+			"weekPrice": 599,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Avalon.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Avalon-interior.png",
+			"name": "Avalon",
+			"id": "avalon"
+		},
+		{
+			"dayPrice": 89,
+			"weekPrice": 559,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Camry.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Camry-Interior.png",
+			"name": "Camry",
+			"id": "camry"
+		},
+		{
+			"dayPrice": 79,
+			"weekPrice": 499,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Corolla-Cross.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Corolla-Cross-Interior.png",
+			"name": "Corolla Cross",
+			"id": "corolla"
+		},
+		{
+			"dayPrice": 119,
+			"weekPrice": 699,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Highlander.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Highlander-Interior.png",
+			"name": "Highlander",
+			"id": "highlander"
+		},
+		{
+			"dayPrice": 99,
+			"weekPrice": 599,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Prius-Prime.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Prius-Prime-Interior.png",
+			"name": "Prius Prime",
+			"id": "prius"
+		},
+		{
+			"dayPrice": 89,
+			"weekPrice": 559,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/RAV4.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/RAV4-Interior.png",
+			"name": "RAV4",
+			"id": "rav4"
+		},
+		{
+			"dayPrice": 129,
+			"weekPrice": 759,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Sienna.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Sienna-Interior.png",
+			"name": "Sienna",
+			"id": "sienna"
+		},
+		{
+			"dayPrice": 99,
+			"weekPrice": 599,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tacoma.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tacoma-Interior.png",
+			"name": "Tacoma",
+			"id": "tacoma"
+		},
+		{
+			"dayPrice": 119,
+			"weekPrice": 699,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tundra.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tundra-Interior.png",
+			"name": "Tundra",
+			"id": "tundra"
+		},
+		{
+			"dayPrice": 99,
+			"weekPrice": 599,
+			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Venza.png",
+			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Venza-Interior.png",
+			"name": "Venza",
+			"id": "venza"
+		}
+	]
+}
