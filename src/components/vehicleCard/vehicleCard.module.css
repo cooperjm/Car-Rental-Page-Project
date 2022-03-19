@@ -66,3 +66,10 @@
 .infoList ul {
   padding-left: 20px;
 }
+
+/* Stop dropshadow from going too dark in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadow-strength: 1%;
+  }
+}

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'open-props/style';
 import 'normalize.css';
+import 'open-props/style';
 // import 'open-props/normalize';
 
 ReactDOM.render(
