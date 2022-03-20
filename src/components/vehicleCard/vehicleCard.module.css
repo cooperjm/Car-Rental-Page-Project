@@ -8,7 +8,12 @@
   border-radius: var(--radius-conditional-1);
   /* background-image: var(--gradient-4), var(--noise-3); */
   padding-top: var(--size-8);
-  box-shadow: var(--shadow-3);
+  box-shadow: var(--shadow-2);
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-5);
 }
 
 .cardImages img {
@@ -49,14 +54,14 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  
 }
 
-.day p, .week p {
+.day p,
+.week p {
   margin-top: 0;
   font-size: var(--font-size-fluid-1);
   font-weight: var(--font-weight-3);
-  line-height: 0.8
+  line-height: 0.8;
 }
 
 .priceText {

@@ -1,12 +1,40 @@
+:root {
+  --toyota-red: #ff0000;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 1240px;
   margin: auto;
-  padding-right: 100px;
+  /* padding-right: 100px; commented this out cause it wasn't doing anyting at the moment and I didn't wanna just delete it */
   gap: 20px;
   padding: 20px;
   overflow: hidden;
+  overflow-x: scroll;
   font-family: var(--font-sans);
+  padding-left: 7px;
+  width: 95%;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--toyota-red);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
