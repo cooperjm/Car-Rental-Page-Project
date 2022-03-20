@@ -1,4 +1,5 @@
 import styles from './vehicleCard.module.css';
+import CardButton from '../cardButton/cardButton';
 
 function vehicleCard(props) {
   const vehicle = props.vehicle;
@@ -21,7 +22,7 @@ function vehicleCard(props) {
 							<br></br>
 							<span className={styles.priceText}>a week</span>
 						</p>
-					</div>					
+					</div>
 					<div className={styles.day}>
 						<p>
 							${vehicle.dayPrice}
@@ -34,8 +35,15 @@ function vehicleCard(props) {
 					<ul>
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						<li>Lorem ipsum dolor sit.</li>
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sint!</li>
+						<li>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+							sint!
+						</li>
 					</ul>
+				</div>
+				<div>
+					<CardButton href={vehicle.button1}>Reserve</CardButton>
+					<CardButton href={vehicle.button2}>Contact Us</CardButton>
 				</div>
 			</div>
 		</div>

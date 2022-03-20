@@ -1,0 +1,45 @@
+:root {
+  --toyota-red: #ff0000;
+  --duration: 170ms;
+  --delay: 170ms;
+}
+
+.cardButton, .cardButton:focus, .cardButton:active {  
+  text-decoration: none;
+  color: var(--toyota-red);
+  position: relative;
+  z-index: 1;
+  margin-right: var(--size-3);
+  padding: var(--size-1) var(--size-3);
+  font-weight: var(--font-weight-5);
+  letter-spacing: var(--font-letterspacing-2);  
+  transition: color var(--duration) ease-in-out var(--delay);
+}
+
+.cardButton::before {
+  content: '';
+  z-index: -1;
+  background-color: var(--toyota-red);
+  border-radius: 2px;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  opacity: 0;
+  transition: 
+    opacity var(--duration) ease-in-out, 
+    width var(--duration) ease-in-out,
+    height var(--duration) ease-in-out var(--delay);
+  
+}
+
+.cardButton:hover::before {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.cardButton:hover {
+  color: white;
+}

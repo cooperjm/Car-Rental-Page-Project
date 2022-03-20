@@ -6,7 +6,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/4Runner.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/4Runner-Interior.png",
 			"name": "4Runner",
-			"id": "runner"
+			"id": "runner",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 99,
@@ -14,7 +16,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Avalon.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Avalon-interior.png",
 			"name": "Avalon",
-			"id": "avalon"
+			"id": "avalon",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 89,
@@ -22,7 +26,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Camry.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Camry-Interior.png",
 			"name": "Camry",
-			"id": "camry"
+			"id": "camry",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 79,
@@ -30,7 +36,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Corolla-Cross.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Corolla-Cross-Interior.png",
 			"name": "Corolla Cross",
-			"id": "corolla"
+			"id": "corolla",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 119,
@@ -38,7 +46,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Highlander.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Highlander-Interior.png",
 			"name": "Highlander",
-			"id": "highlander"
+			"id": "highlander",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 99,
@@ -46,7 +56,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Prius-Prime.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Prius-Prime-Interior.png",
 			"name": "Prius Prime",
-			"id": "prius"
+			"id": "prius",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 89,
@@ -54,7 +66,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/RAV4.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/RAV4-Interior.png",
 			"name": "RAV4",
-			"id": "rav4"
+			"id": "rav4",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 129,
@@ -62,7 +76,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Sienna.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Sienna-Interior.png",
 			"name": "Sienna",
-			"id": "sienna"
+			"id": "sienna",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 99,
@@ -70,7 +86,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tacoma.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tacoma-Interior.png",
 			"name": "Tacoma",
-			"id": "tacoma"
+			"id": "tacoma",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 119,
@@ -78,7 +96,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tundra.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Tundra-Interior.png",
 			"name": "Tundra",
-			"id": "tundra"
+			"id": "tundra",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		},
 		{
 			"dayPrice": 99,
@@ -86,7 +106,9 @@
 			"exteriorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Venza.png",
 			"interiorImage": "https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicleimages/Venza-Interior.png",
 			"name": "Venza",
-			"id": "venza"
+			"id": "venza",
+			"button1": "https://www.toyota.com/priusprime/",
+			"button2": "https://www.toyota.com/priusprime/"
 		}
 	]
 }
