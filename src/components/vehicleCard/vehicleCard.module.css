@@ -65,6 +65,7 @@
 
 .infoList ul {
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 /* Stop dropshadow from going too dark in dark mode */
