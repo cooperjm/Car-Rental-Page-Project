@@ -1,6 +1,6 @@
 import styles from './vehicleCardContainer.module.css';
 
-function vehicleCardContainer({children}) {
+function VehicleCardContainer({children}) {
   return (
     <div className={styles.container}>
       {children}
@@ -8,4 +8,4 @@ function vehicleCardContainer({children}) {
   );
 }
 
-export default vehicleCardContainer;
+export default VehicleCardContainer;

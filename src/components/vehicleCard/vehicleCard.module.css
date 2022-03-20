@@ -32,7 +32,8 @@
   position: relative;
   left: 0;
   flex-wrap: nowrap;
-  transition: left 0.2s ease-in-out;
+  transition: left 0.4s var(--ease-in-out-3);
+  cursor: pointer;
 }
 
 .info {
@@ -71,6 +72,10 @@
 .infoList ul {
   padding-left: 20px;
   margin-bottom: 20px;
+}
+
+.toggleImage {
+  left: -100% !important;
 }
 
 /* Stop dropshadow from going too dark in dark mode */

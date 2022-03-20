@@ -8,7 +8,8 @@
 			"name": "4Runner",
 			"id": "runner",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 99,
@@ -18,7 +19,8 @@
 			"name": "Avalon",
 			"id": "avalon",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 89,
@@ -28,7 +30,8 @@
 			"name": "Camry",
 			"id": "camry",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 79,
@@ -38,7 +41,8 @@
 			"name": "Corolla Cross",
 			"id": "corolla",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 119,
@@ -48,7 +52,8 @@
 			"name": "Highlander",
 			"id": "highlander",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 99,
@@ -58,7 +63,8 @@
 			"name": "Prius Prime",
 			"id": "prius",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 89,
@@ -68,7 +74,8 @@
 			"name": "RAV4",
 			"id": "rav4",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 129,
@@ -78,7 +85,8 @@
 			"name": "Sienna",
 			"id": "sienna",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 99,
@@ -88,7 +96,8 @@
 			"name": "Tacoma",
 			"id": "tacoma",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 119,
@@ -98,7 +107,8 @@
 			"name": "Tundra",
 			"id": "tundra",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		},
 		{
 			"dayPrice": 99,
@@ -108,7 +118,8 @@
 			"name": "Venza",
 			"id": "venza",
 			"button1": "https://www.toyota.com/priusprime/",
-			"button2": "https://www.toyota.com/priusprime/"
+			"button2": "https://www.toyota.com/priusprime/",
+			"isEV": false
 		}
 	]
 }
