@@ -1,6 +1,6 @@
 import styles from './cardButton.module.css';
 
-function cardButton(props) {
+function CardButton(props) {
   return (
     <a href={props.href} className={styles.cardButton}>
       {props.children}
@@ -9,4 +9,4 @@ function cardButton(props) {
   
 }
 
-export default cardButton;
+export default CardButton;
