@@ -1,13 +1,23 @@
+import React, { useState } from 'react';
 import styles from './vehicleCard.module.css';
 import CardButton from '../cardButton/cardButton';
 
-function vehicleCard(props) {
-  const vehicle = props.vehicle;
-  console.log(vehicle);
+function VehicleCard(props) {
+	const [imageToggle, setImageToggle] = useState(false);
+	const vehicle = props.vehicle;
+
+	function toggleImage() {
+		setImageToggle(!imageToggle);
+	}	
+
+	// console.log(vehicle);
 	return (
 		<div className={styles.card}>
 			<div className={styles.cardImages}>
-				<div className={styles.imgContainer}>
+				<div className={
+					`${styles.imgContainer} ${imageToggle ? styles.toggleImage : ''}`
+					} 
+					onClick={toggleImage} >
 					<img src={vehicle.exteriorImage} alt={vehicle.name} />
 					<img src={vehicle.interiorImage} alt={vehicle.name + ' Interior'} />
 				</div>
@@ -50,4 +60,4 @@ function vehicleCard(props) {
 	);
 }
 
-export default vehicleCard;
+export default VehicleCard;
