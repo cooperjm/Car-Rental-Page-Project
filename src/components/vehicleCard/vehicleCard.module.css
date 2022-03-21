@@ -7,7 +7,7 @@
   border: var(--border-size-1) solid var(--gray-6);
   border-radius: var(--radius-conditional-1);
   /* background-image: var(--gradient-4), var(--noise-3); */
-  padding-top: var(--size-8);
+  /* padding-top: var(--size-8); */
   box-shadow: var(--shadow-2);
   transition: all 0.5s ease;
 }

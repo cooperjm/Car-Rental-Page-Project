@@ -1,27 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './vehicleCard.module.css';
 import CardButton from '../cardButton/cardButton';
+import { CardImage } from '../cardImage/cardImage';
 
 function VehicleCard(props) {
-	const [imageToggle, setImageToggle] = useState(false);
 	const vehicle = props.vehicle;
 
-	function toggleImage() {
-		setImageToggle(!imageToggle);
-	}	
-
-	// console.log(vehicle);
 	return (
 		<div className={styles.card}>
-			<div className={styles.cardImages}>
-				<div className={
-					`${styles.imgContainer} ${imageToggle ? styles.toggleImage : ''}`
-					} 
-					onClick={toggleImage} >
-					<img src={vehicle.exteriorImage} alt={vehicle.name} />
-					<img src={vehicle.interiorImage} alt={vehicle.name + ' Interior'} />
-				</div>
-			</div>
+			<CardImage
+				exterior={vehicle.exteriorImage}
+				interior={vehicle.interiorImage}
+				name={vehicle.name}
+			/>
 			<div className={styles.info}>
 				<p className={styles.year}>2022</p>
 				<p className={styles.model}>{vehicle.name}</p>

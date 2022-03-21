@@ -11,6 +11,7 @@
   /* padding-right: 100px; commented this out cause it wasn't doing anyting at the moment and I didn't wanna just delete it */
   gap: 20px;
   padding: 20px;
+  padding-bottom: var(--size-9);
   overflow: hidden;
   font-family: var(--font-sans);
   padding-left: 7px;

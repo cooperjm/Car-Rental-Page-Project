@@ -1,0 +1,65 @@
+.imgHolder {
+	display: grid;
+	position: relative;
+	place-items: center;
+	place-content: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.imgHolder img {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	width: 100%;
+}
+
+.carExterior,
+.carInterior {
+	transition: opacity 0.4s ease-in-out;
+}
+
+.carExterior {
+	transform: translateY(20px);
+	opacity: 1;
+}
+
+.carInterior {
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
+.hide {
+	opacity: 0;
+}
+
+.circleSelectors {
+	position: absolute;
+	height: 30px;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circ {
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border-radius: 50%;
+	outline: 1px solid #505050;
+	outline-offset: 1px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.circSelected {
+	background-color: #898989;
+	outline: 1px solid white;
+	outline-offset: 1px;
+	cursor: pointer;
+}
+
+
