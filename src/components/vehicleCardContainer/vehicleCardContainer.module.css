@@ -16,3 +16,8 @@
   font-family: var(--font-sans);
   padding-left: 7px;
 }
+
+::selection {
+  background-color: var(--toyota-red);
+  color: white;
+}
