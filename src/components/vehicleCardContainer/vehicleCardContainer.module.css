@@ -1,23 +1,122 @@
 :root {
-  --toyota-red: #ff0000;
+	--toyota-red: #ff0000;
+}
+
+.main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  scroll-behavior: smooth;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  max-width: 1240px;
-  margin: auto;
-  /* padding-right: 100px; commented this out cause it wasn't doing anyting at the moment and I didn't wanna just delete it */
-  gap: 20px;
-  padding: 20px;
-  padding-bottom: var(--size-9);
-  overflow: hidden;
-  font-family: var(--font-sans);
-  padding-left: 7px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	max-width: 1100px;
+	/* margin: auto; */
+	/* padding-right: 100px; commented this out cause it wasn't doing anyting at the moment and I didn't wanna just delete it */
+	gap: 20px;
+	padding: 20px;
+	padding-bottom: var(--size-9);
+	overflow: hidden;
+	font-family: var(--font-sans);
+	padding-left: 7px;
 }
 
 ::selection {
-  background-color: var(--toyota-red);
-  color: white;
+	background-color: var(--toyota-red);
+	color: white;
+}
+
+.gg-chevron-left {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 40px;
+	height: 40px;
+	border: 3px solid transparent;
+	border-radius: 100px;
+}
+.gg-chevron-left::after {
+	content: '';
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-bottom: 3px solid;
+	border-left: 3px solid;
+	transform: rotate(45deg);
+	left: 12px;
+	top: 9px;
+}
+
+.gg-chevron-right {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 40px;
+	height: 40px;
+	border: 3px solid transparent;
+	border-radius: 100px;
+}
+.gg-chevron-right::after {
+	content: '';
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-bottom: 3px solid;
+	border-right: 3px solid;
+	transform: rotate(-45deg);
+	right: 12px;
+	top: 9px;
+}
+
+.navContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 100px;
+	justify-content: center;
+	position: fixed;
+	bottom: 64px;
+	max-width: 1100px;
+	width: 100%;
+}
+
+.chevron {
+	border: solid 2px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	transform: scale(1);
+	transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.chevron i {
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.chevron i::after {
+  transition: border-color 300ms ease-in-out;
+}
+
+.chevron:hover {
+	transform: scale(1.2);
+}
+
+.chevron:hover i {
+	background-color: black;
+	transform: scale(.85);
+}
+
+.chevron:hover i::after {
+  border-color: white !important;
 }

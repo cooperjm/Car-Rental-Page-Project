@@ -1,5 +1,3 @@
 # Rental Page Project for work
 
-test austin
-
-testing with GUI
+Single page car rental page.

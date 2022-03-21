@@ -13,6 +13,8 @@ const getVehicles = async () => {
 	return jsonResponse;
 };
 
+
+
 function App() {
 	const [vehicles, setVehicles] = useState([]);
 
@@ -20,14 +22,16 @@ function App() {
 		getVehicles().then((result) => setVehicles(result.vehicles));
 	}, []);
 
-	console.log(vehicles);
+	// console.log(vehicles);
 
 	return (
-		<VehicleCardContainer>
-			{vehicles.map((vehicle) => (
-				<VehicleCard key={vehicle.id} vehicle={vehicle} />
-			))}
-		</VehicleCardContainer>
+		
+			<VehicleCardContainer length={vehicles.length}>
+				{vehicles.map((vehicle) => (
+					<VehicleCard key={vehicle.id} vehicle={vehicle} />
+				))}
+			</VehicleCardContainer>
+		
 	);
 }
 
