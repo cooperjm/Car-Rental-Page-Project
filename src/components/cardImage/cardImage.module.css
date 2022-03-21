@@ -45,20 +45,21 @@
 }
 
 .circ {
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	background-color: #fff;
 	border-radius: 50%;
 	outline: 1px solid #505050;
-	outline-offset: 1px;
+	/* outline-offset: 1px; */
 	cursor: pointer;
 	margin: 0 5px;
 }
 
 .circSelected {
 	background-color: #898989;
+	background-color: var(--toyota-red);
 	outline: 1px solid white;
-	outline-offset: 1px;
+	/* outline-offset: 1px; */
 	cursor: pointer;
 }
 
