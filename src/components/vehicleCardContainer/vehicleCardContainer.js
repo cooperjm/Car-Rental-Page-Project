@@ -4,27 +4,55 @@ import styles from './vehicleCardContainer.module.css';
 function VehicleCardContainer({ children, length }) {
 	const container = useRef(null);
 	const [containerLength, setContainerLength] = useState(null);
-	// const [scroll, setScroll] = useState(null);
+	const [cardWidth, setCardWidth] =useState(null);
+	const [cardsPerPage, setCardsPerPage] = useState(3);
+	const [page, setPage] = useState(1);
+	const [numberOfPages, setNumberOfPages] = useState(null);
+	const [scrolled, setScrolled] = useState(0);
+	const cardGap = 20;
   const numberOfVehicles = length;
-  console.log(numberOfVehicles);
+  // console.log(numberOfVehicles);
 
 	useEffect(() => {
-		setContainerLength(container.current.scrollWidth);
+		setTimeout(() => {
+			setContainerLength(container.current.scrollWidth);
+			setCardWidth(container.current.firstChild.offsetWidth);
+			setNumberOfPages(
+				Math.ceil(container.current.scrollWidth / (container.current.firstChild.offsetWidth * cardsPerPage))
+			);
+		}, 200);		
 	}, []);
 
+	console.log(numberOfPages);
+
   function scrollRight() {
-    console.dir(container.current);
-		console.log(containerLength);
-    container.current.scrollTo(
-			{ top: 0, left: container.current.offsetWidth, behavior: 'smooth'}
-		);
+		let scrollWidth = cardWidth * cardsPerPage + cardGap * cardsPerPage;
+		
+		if ( page >= 1 && page < numberOfPages ) {
+			setPage(page + 1);
+			let move = scrolled + scrollWidth;
+			setScrolled(move);			
+			container.current.scrollTo({
+				top: 0,
+				left: move,
+				behavior: 'smooth',
+			});
+			console.log(scrolled);
+		}
   }
 	function scrollLeft() {
-		container.current.scrollTo({
-			top: 0,
-			left: 0,
-			behavior: 'smooth',
-		});
+		let scrollWidth = cardWidth * cardsPerPage + cardGap * cardsPerPage;
+		if ( page !== 1 && page >= 2 ) {
+			setPage(page - 1);
+			let move = scrolled - scrollWidth;
+			setScrolled(move);
+			container.current.scrollTo({
+				top: 0,
+				left: move,
+				behavior: 'smooth',
+			});
+			console.log(scrolled);
+		}
 	}
 
 	return (
@@ -43,5 +71,6 @@ function VehicleCardContainer({ children, length }) {
 		</div>
 	);
 }
+
 
 export default VehicleCardContainer;
