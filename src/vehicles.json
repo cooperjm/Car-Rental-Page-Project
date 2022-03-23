@@ -9,7 +9,9 @@
 			"id": "runner",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 99,
@@ -20,7 +22,9 @@
 			"id": "avalon",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "ev",
+			"year": 2022
 		},
 		{
 			"dayPrice": 89,
@@ -31,7 +35,9 @@
 			"id": "camry",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "hybrid",
+			"year": 2022
 		},
 		{
 			"dayPrice": 79,
@@ -42,7 +48,9 @@
 			"id": "corolla",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 119,
@@ -53,7 +61,9 @@
 			"id": "highlander",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 99,
@@ -64,7 +74,9 @@
 			"id": "prius",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 89,
@@ -75,7 +87,9 @@
 			"id": "rav4",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 129,
@@ -86,7 +100,9 @@
 			"id": "sienna",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 99,
@@ -97,7 +113,9 @@
 			"id": "tacoma",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 119,
@@ -108,7 +126,9 @@
 			"id": "tundra",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		},
 		{
 			"dayPrice": 99,
@@ -119,7 +139,9 @@
 			"id": "venza",
 			"button1": "https://www.toyota.com/priusprime/",
 			"button2": "https://www.toyota.com/priusprime/",
-			"isEV": false
+			"isEV": false,
+			"fuelType": "gas",
+			"year": 2022
 		}
 	]
 }
