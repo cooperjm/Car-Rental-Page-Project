@@ -2,6 +2,10 @@
 	--toyota-red: #ff0000;
 }
 
+.sectionContainer  {
+	
+}
+
 .main {
 	position: relative;
 	display: flex;
@@ -9,6 +13,7 @@
 	align-items: center;
 	justify-content: center;
   scroll-behavior: smooth;
+	height: 100%;
 }
 
 .container {
@@ -16,14 +21,13 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	max-width: 1100px;
-	/* margin: auto; */
-	/* padding-right: 100px; commented this out cause it wasn't doing anyting at the moment and I didn't wanna just delete it */
+	width: 100%;
 	gap: 20px;
 	padding: 20px;
 	padding-bottom: var(--size-9);
 	overflow: hidden;
 	font-family: var(--font-sans);
-	padding-left: 7px;
+	padding-left: 5px;
 }
 
 ::selection {
@@ -120,3 +124,26 @@
 .chevron:hover i::after {
   border-color: white !important;
 }
+
+@media only screen and (max-width: 600px) {
+	
+  .main {
+		align-items: flex-start !important;
+		/* margin-left: 2%; */
+	}
+	.container {
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.card {
+		max-width: 100%;
+	}
+}
+
+/* @media only screen and (max-width: 400px) {
+	
+  .main {
+		align-items: flex-start !important;
+		margin-left: 0px;
+	}
+} */

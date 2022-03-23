@@ -35,22 +35,19 @@ function makeArray(int) {
 
 function App() {
 	const [vehicles, setVehicles] = useState([]);
-	const [cardsPerPage, setCardsPerPage] = useState(3);
+	const [cardsPerPage, setCardsPerPage] = useState(1);
 	const [blanksArray, setBlanksArray] = useState([]);
 	
 	useEffect(() => {
 		getVehicles().then((result) => {
-			setVehicles(result.vehicles)
+			setVehicles(result.vehicles);
 			test2 = divisible(cardsPerPage, result.vehicles.length);
-			// setTest(divisible(cardsPerPage, result.vehicles.length));
-			// console.log(test2);
-			// console.log(makeArray(test2));
 			setBlanksArray(makeArray(test2));
 		});
-	}, []);	
+	}, [cardsPerPage]);	
 
 	return (
-		<VehicleCardContainer length={vehicles.length} blanks={test2}>
+		<VehicleCardContainer length={vehicles.length} blanks={test2} perPage={cardsPerPage}>
 			{vehicles.map((vehicle) => (
 				<VehicleCard
 					key={vehicle.id}

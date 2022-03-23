@@ -7,8 +7,6 @@
 	flex-shrink: 0;
 	border: var(--border-size-1) solid var(--gray-6);
 	border-radius: var(--radius-conditional-1);
-	/* background-image: var(--gradient-4), var(--noise-3); */
-	/* padding-top: var(--size-8); */
 	box-shadow: var(--shadow-2);
 	transition: all 0.5s ease;
 }
@@ -96,16 +94,25 @@
 }
 
 .evBG {
-	background: radial-gradient(circle at top, rgba(0,186,255,1) 0%, rgba(255,255,255,0) 37%);
+	background: radial-gradient(circle at top, rgba(0,186,255,.4) 0%, rgba(255,255,255,0) 37%);
 }
 
 .hybridBG {
-	background: radial-gradient(circle at top, rgba(15, 110, 199, 1) 0%, rgba(255,255,255,0) 37%);
+	background: radial-gradient(circle at top, rgba(15, 110, 199, .4) 0%, rgba(255,255,255,0) 37%);
 }
 
 /* Stop dropshadow from going too dark in dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--shadow-strength: 1%;
+	}
+}
+
+@media only screen and (max-width: 600px) {	
+	.card {
+		max-width: 100%;
+	}
+	.card:hover {
+		box-shadow: none;
 	}
 }
