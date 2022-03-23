@@ -4,6 +4,7 @@ import VehicleCardContainer from './components/vehicleCardContainer/vehicleCardC
 import VehicleCard from './components/vehicleCard/vehicleCard';
 import BlankCard from './components/blankCard/BlankCard';
 
+let test2;
 const endpoint =
 	'https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicles.json';
 
@@ -15,42 +16,41 @@ const getVehicles = async () => {
 };
 
 function divisible(num, length) {
-	let initialLength = length;
-	while (initialLength % num !== 0) {
-		initialLength++;
+	let dLength = length;
+	while (dLength % num !== 0) {
+		dLength++;
 	}
-	return initialLength - length;
+	return dLength - length;
 }
 
-console.log(divisible(3, 11));
-
+function makeArray(int) {
+	let temp = [];
+		for (let i = 1; i <= int; i++) {
+			temp.push(i);
+			console.log(i);
+		}
+		return temp;
+}
 
 
 function App() {
 	const [vehicles, setVehicles] = useState([]);
 	const [cardsPerPage, setCardsPerPage] = useState(3);
 	const [blanksArray, setBlanksArray] = useState([]);
-
+	
 	useEffect(() => {
-		getVehicles().then((result) => setVehicles(result.vehicles));
+		getVehicles().then((result) => {
+			setVehicles(result.vehicles)
+			test2 = divisible(cardsPerPage, result.vehicles.length);
+			// setTest(divisible(cardsPerPage, result.vehicles.length));
+			// console.log(test2);
+			// console.log(makeArray(test2));
+			setBlanksArray(makeArray(test2));
+		});
 	}, []);	
 
-	useEffect(() => {
-		const blanks = divisible(cardsPerPage, vehicles.length);
-		let temp = [];
-		for (let i = 0; i < blanks; i++) {
-			temp.push(i);
-			console.log(i);
-		}
-		setBlanksArray(temp);
-	}, []);
-	
-	
-
-	console.log(blanksArray);
-
 	return (
-		<VehicleCardContainer length={vehicles.length}>
+		<VehicleCardContainer length={vehicles.length} blanks={test2}>
 			{vehicles.map((vehicle) => (
 				<VehicleCard
 					key={vehicle.id}
@@ -58,9 +58,9 @@ function App() {
 					blankCards={divisible(cardsPerPage, vehicles.length)}
 				/>
 			))}
-			{/* {[...Array(blanks)].map((e, i) => {
-				<BlankCard key={i} e={e} />
-			})} */}
+			{blanksArray.map((e, i) => (
+				<BlankCard key={e} />
+			))}
 		</VehicleCardContainer>
 	);
 }

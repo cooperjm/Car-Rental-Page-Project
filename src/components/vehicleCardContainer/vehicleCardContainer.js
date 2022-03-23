@@ -1,13 +1,13 @@
 import { useRef, useState, useEffect } from 'react';
 import styles from './vehicleCardContainer.module.css';
 
-function VehicleCardContainer({ children, length }) {
+function VehicleCardContainer({ children, length, blanks }) {
 	const container = useRef(null);
 	const [containerLength, setContainerLength] = useState(null);
 	const [cardWidth, setCardWidth] =useState(null);
 	const [cardsPerPage, setCardsPerPage] = useState(3);
 	const [page, setPage] = useState(1);
-	const [numberOfPages, setNumberOfPages] = useState(null);
+	const [numberOfPages, setNumberOfPages] = useState(0);
 	const [scrolled, setScrolled] = useState(0);
 	const cardGap = 20;
   const numberOfVehicles = length;
@@ -20,10 +20,11 @@ function VehicleCardContainer({ children, length }) {
 			setNumberOfPages(
 				Math.ceil(container.current.scrollWidth / (container.current.firstChild.offsetWidth * cardsPerPage))
 			);
+			// setNumberOfPages(+length + +blanks);
 		}, 200);		
 	}, []);
 
-	console.log(numberOfPages);
+	console.log(container);
 
   function scrollRight() {
 		let scrollWidth = cardWidth * cardsPerPage + cardGap * cardsPerPage;
@@ -37,7 +38,7 @@ function VehicleCardContainer({ children, length }) {
 				left: move,
 				behavior: 'smooth',
 			});
-			console.log(scrolled);
+			// console.log(scrolled);
 		}
   }
 	function scrollLeft() {
