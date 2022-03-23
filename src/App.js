@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import VehicleCardContainer from './components/vehicleCardContainer/vehicleCardContainer';
 import VehicleCard from './components/vehicleCard/vehicleCard';
 import BlankCard from './components/blankCard/BlankCard';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 let test2;
 const endpoint =

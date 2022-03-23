@@ -49,7 +49,8 @@
 	height: 10px;
 	background-color: #fff;
 	border-radius: 50%;
-	outline: 1px solid #505050;
+	border: 1px solid #505050;
+	/* outline: 1px solid #505050; */
 	/* outline-offset: 1px; */
 	cursor: pointer;
 	margin: 0 5px;
@@ -58,7 +59,8 @@
 .circSelected {
 	background-color: #898989;
 	background-color: var(--toyota-red);
-	outline: 1px solid white;
+	border: 1px solid white;
+	/* outline: 1px solid white; */
 	/* outline-offset: 1px; */
 	cursor: pointer;
 }
