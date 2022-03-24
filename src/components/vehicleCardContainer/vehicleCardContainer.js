@@ -3,7 +3,6 @@ import styles from './vehicleCardContainer.module.css';
 
 function VehicleCardContainer({ children, length, blanks, perPage }) {
 	const container = useRef(null);
-	// const [containerLength, setContainerLength] = useState(null);
 	const [cardWidth, setCardWidth] =useState(null);
 	const [page, setPage] = useState(1);
 	const [numberOfPages, setNumberOfPages] = useState(0);
@@ -11,6 +10,8 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 	const cardGap = 20;
 	// const testPages = ((length + blanks) / perPage);
 	// console.log(testPages);
+	let tStart = 0;
+	let tEnd = 0;
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -19,7 +20,6 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 			setNumberOfPages((length + blanks) / perPage);
 		}, 300);		
 	}, [blanks, length, perPage]);
-
 	
 
   function scrollRight() {
@@ -57,9 +57,31 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 		}
 	}
 
+	function touchStart(e) {		
+		tStart = e.changedTouches[0].clientX;
+	}
+
+
+	function touchEnd(e) {
+		tEnd = e.changedTouches[0].clientX;
+
+		if ( tEnd < tStart) {
+			// console.log(`tEnd: ${tEnd} | tStart: ${tStart}`);
+			// console.log(tStart - tEnd);
+			if (tStart - tEnd > 50) {
+				scrollRight();
+			}			
+		} else {
+			if (tEnd - tStart > 50) {
+				scrollLeft();
+			}
+			
+		}
+	}
+
 	return (
 		<section className={styles.sectionContainer}>
-			<div className={styles.main}>
+			<div className={styles.main} onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd} >
 				<div className={styles.container} ref={container}>
 					{children}
 				</div>
