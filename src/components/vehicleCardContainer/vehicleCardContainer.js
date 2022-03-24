@@ -81,7 +81,7 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 
 	return (
 		<section className={styles.sectionContainer}>
-			<div className={styles.main} onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd} >
+			<div className={styles.main} onTouchStart={touchStart} onTouchEnd={touchEnd} >
 				<div className={styles.container} ref={container}>
 					{children}
 				</div>
