@@ -2,8 +2,7 @@
 	--toyota-red: #ff0000;
 }
 
-.sectionContainer  {
-	
+.sectionContainer {
 }
 
 .main {
@@ -12,7 +11,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 	height: 100%;
 }
 
@@ -106,15 +105,15 @@
 	height: 40px;
 	transform: scale(1);
 	transition: transform 300ms ease-in-out;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .chevron i {
-  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+	transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .chevron i::after {
-  transition: border-color 300ms ease-in-out;
+	transition: border-color 300ms ease-in-out;
 }
 
 .chevron:hover {
@@ -123,16 +122,32 @@
 
 .chevron:hover i {
 	background-color: black;
-	transform: scale(.85);
+	transform: scale(0.85);
 }
 
 .chevron:hover i::after {
-  border-color: white !important;
+	border-color: white !important;
+}
+
+.chevronDisabled {
+	background: gray;
+	color: white;
+	opacity: 0.5;
+	cursor: auto;
+	transition: all 300ms ease-in-out;
+}
+
+.chevronDisabled:hover {
+	transform: none;
+}
+
+.chevronDisabled:hover i {
+	background-color: gray;
+	transform: none;
 }
 
 @media only screen and (max-width: 600px) {
-	
-  .main {
+	.main {
 		align-items: flex-start !important;
 		/* margin-left: 2%; */
 	}
