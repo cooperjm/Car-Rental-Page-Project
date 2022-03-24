@@ -17,6 +17,8 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 		setTimeout(() => {
 			setCardWidth(container.current.firstChild.offsetWidth);
 			setNumberOfPages((length + blanks) / perPage);
+			console.dir(container.current);
+			container.current.focus();
 		}, 300);
 	}, [blanks, length, perPage]);
 
@@ -26,7 +28,7 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 		if (window.innerWidth >= 600) {
 			adjustedPageNumber = numberOfPages - 2;
 		}
-		console.dir(window.innerWidth, adjustedPageNumber);
+		// console.dir(window.innerWidth, adjustedPageNumber);
 		if (page >= 1 && page < adjustedPageNumber) {
 			setPage(page + 1);
 			let move = scrolled + scrollWidth;
@@ -74,8 +76,23 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 		}
 	}
 
+	function keypressHandler(key) {
+		if (key === 'ArrowLeft') {
+			scrollLeft();
+		}
+		if (key === 'ArrowRight') {
+			scrollRight();
+		}
+	}
+
 	return (
-		<section className={styles.sectionContainer}>
+		<section
+			className={styles.sectionContainer}
+			tabIndex="0"
+			onKeyDown={(e) => {
+				keypressHandler(e.key);
+			}}
+		>
 			<div
 				className={styles.main}
 				onTouchStart={touchStart}
@@ -84,6 +101,7 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 				<div className={styles.container} ref={container}>
 					{children}
 				</div>
+
 				<div className={styles.navContainer}>
 					<div
 						className={`${styles.chevron} ${
@@ -93,7 +111,12 @@ function VehicleCardContainer({ children, length, blanks, perPage }) {
 					>
 						<i className={styles['gg-chevron-left']}></i>
 					</div>
-					<div className={`${styles.chevron} ${atEnd ? styles.chevronDisabled : ''}`} onClick={scrollRight}>
+					<div
+						className={`${styles.chevron} ${
+							atEnd ? styles.chevronDisabled : ''
+						}`}
+						onClick={scrollRight}
+					>
 						<i className={styles['gg-chevron-right']}></i>
 					</div>
 				</div>

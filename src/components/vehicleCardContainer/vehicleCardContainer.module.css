@@ -3,6 +3,7 @@
 }
 
 .sectionContainer {
+	outline: none;
 }
 
 .main {
@@ -120,9 +121,15 @@
 	transform: scale(1.2);
 }
 
+
 .chevron:hover i {
 	background-color: black;
 	transform: scale(0.85);
+}
+
+.chevron:active,.chevron:active i {
+	transform: scale(1);
+	/* animation: button 300ms none ease-in-out; */
 }
 
 .chevron:hover i::after {
@@ -159,4 +166,10 @@
 	.card {
 		max-width: 100%;
 	}
+}
+
+@keyframes button {
+	0% {}
+	100% {transform: scale(10);}
+	
 }
