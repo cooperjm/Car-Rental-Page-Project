@@ -64,17 +64,14 @@ function VehicleCard(props) {
 				</div>
 				<div className={styles.infoList}>
 					<ul>
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-						<li>Lorem ipsum dolor sit.</li>
-						<li>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-							sint!
-						</li>
+						<li dangerouslySetInnerHTML={{__html: vehicle.info1}}></li>
+						<li dangerouslySetInnerHTML={{__html: vehicle.info2}}></li>
+						<li dangerouslySetInnerHTML={{__html: vehicle.info3}}></li>
 					</ul>
 				</div>
 				<div>
-					<CardButton href={vehicle.button1}>Reserve</CardButton>
-					<CardButton href={vehicle.button2}>Contact Us</CardButton>
+					{/* <CardButton href={vehicle.button1}>Reserve Now</CardButton> */}
+					<CardButton href={vehicle.button2}>Request This Car</CardButton>
 				</div>
 			</div>
 		</div>

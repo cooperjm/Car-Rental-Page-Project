@@ -9,7 +9,7 @@ smoothscroll.polyfill();
 
 let test2;
 const endpoint =
-	'https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-6999/vehicles.json';
+	'https://clients.contology.com/Client/CHTO-Chuck-Hutton-Toyota/07-Content/CHTO-9071/vehicles.json';
 
 const getVehicles = async () => {
 	const response = await fetch(endpoint);
