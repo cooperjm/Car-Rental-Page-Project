@@ -28,40 +28,70 @@ function divisible(num, length) {
 
 function makeArray(int) {
 	let temp = [];
-		for (let i = 1; i <= int; i++) {
-			temp.push(i);
-			console.log(i);
-		}
-		return temp;
+	for (let i = 1; i <= int; i++) {
+		temp.push(i);
+		console.log(i);
+	}
+	return temp;
 }
-
 
 function App() {
 	const [vehicles, setVehicles] = useState([]);
 	const [cardsPerPage, setCardsPerPage] = useState(1);
 	const [blanksArray, setBlanksArray] = useState([]);
-	
+
 	useEffect(() => {
 		getVehicles().then((result) => {
 			setVehicles(result.vehicles);
 			test2 = divisible(cardsPerPage, result.vehicles.length);
 			setBlanksArray(makeArray(test2));
 		});
-	}, [cardsPerPage]);	
+	}, [cardsPerPage]);
 
 	return (
-		<VehicleCardContainer length={vehicles.length} blanks={test2} perPage={cardsPerPage}>
-			{vehicles.map((vehicle) => (
-				<VehicleCard
-					key={vehicle.id}
-					vehicle={vehicle}
+		<>
+			<VehicleCardContainer
+				length={vehicles.length}
+				blanks={test2}
+				perPage={cardsPerPage}
+			>
+				{vehicles.filter(hybrid => hybrid['fuelType'] === 'hybrid').map(hybridVehic => (
+					<VehicleCard
+					key={hybridVehic.id}
+					vehicle={hybridVehic}
 					blankCards={divisible(cardsPerPage, vehicles.length)}
 				/>
-			))}
-			{blanksArray.map((e, i) => (
-				<BlankCard key={e} />
-			))}
-		</VehicleCardContainer>
+				))}
+
+				{/* {vehicles.map((vehicle) => (
+					<VehicleCard
+						key={vehicle.id}
+						vehicle={vehicle}
+						blankCards={divisible(cardsPerPage, vehicles.length)}
+					/>
+				))} */}
+				{blanksArray.map((e, i) => (
+					<BlankCard key={e} />
+				))}
+			</VehicleCardContainer>
+
+			<VehicleCardContainer
+				length={vehicles.length}
+				blanks={test2}
+				perPage={cardsPerPage}
+			>
+				{vehicles.map((vehicle) => (
+					<VehicleCard
+						key={vehicle.id}
+						vehicle={vehicle}
+						blankCards={divisible(cardsPerPage, vehicles.length)}
+					/>
+				))}
+				{blanksArray.map((e, i) => (
+					<BlankCard key={e} />
+				))}
+			</VehicleCardContainer>
+		</>
 	);
 }
 
