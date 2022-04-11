@@ -4,6 +4,7 @@ import VehicleCardContainer from './components/vehicleCardContainer/vehicleCardC
 import VehicleCard from './components/vehicleCard/vehicleCard';
 import BlankCard from './components/blankCard/BlankCard';
 import smoothscroll from 'smoothscroll-polyfill';
+import styles from './App.module.css';
 
 smoothscroll.polyfill();
 
@@ -37,6 +38,8 @@ function makeArray(int) {
 
 function App() {
 	const [vehicles, setVehicles] = useState([]);
+	const [hybrids, setHybrids] = useState([]);
+	const [gas, setGas]	= useState([]);
 	const [cardsPerPage, setCardsPerPage] = useState(1);
 	const [blanksArray, setBlanksArray] = useState([]);
 
@@ -45,46 +48,48 @@ function App() {
 			setVehicles(result.vehicles);
 			test2 = divisible(cardsPerPage, result.vehicles.length);
 			setBlanksArray(makeArray(test2));
+			setHybrids(() => {
+				return result.vehicles.filter(hyb => hyb['fuelType'] === 'hybrid');
+			});
+			setGas(() => {
+				return result.vehicles.filter(gCar => gCar['fuelType'] === 'gas');
+			});
 		});
 	}, [cardsPerPage]);
 
+
 	return (
 		<>
+			<h2 className={styles.title}>Hybrids</h2>
 			<VehicleCardContainer
-				length={vehicles.length}
+				length={hybrids.length}
 				blanks={test2}
 				perPage={cardsPerPage}
 			>
-				{vehicles.filter(hybrid => hybrid['fuelType'] === 'hybrid').map(hybridVehic => (
-					<VehicleCard
-					key={hybridVehic.id}
-					vehicle={hybridVehic}
-					blankCards={divisible(cardsPerPage, vehicles.length)}
-				/>
-				))}
-
-				{/* {vehicles.map((vehicle) => (
+				{hybrids.map((vehicle) => (
 					<VehicleCard
 						key={vehicle.id}
 						vehicle={vehicle}
-						blankCards={divisible(cardsPerPage, vehicles.length)}
+						blankCards={divisible(cardsPerPage, hybrids.length)}
 					/>
-				))} */}
+				))}
 				{blanksArray.map((e, i) => (
 					<BlankCard key={e} />
 				))}
 			</VehicleCardContainer>
-
+			<div className={styles.spacer}></div>
+			
+			<h2 className={styles.title}>Gas</h2>
 			<VehicleCardContainer
-				length={vehicles.length}
+				length={gas.length}
 				blanks={test2}
 				perPage={cardsPerPage}
 			>
-				{vehicles.map((vehicle) => (
+				{gas.map((vehicle) => (
 					<VehicleCard
 						key={vehicle.id}
 						vehicle={vehicle}
-						blankCards={divisible(cardsPerPage, vehicles.length)}
+						blankCards={divisible(cardsPerPage, gas.length)}
 					/>
 				))}
 				{blanksArray.map((e, i) => (
