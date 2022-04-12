@@ -6,7 +6,7 @@
 
 .cardButton, .cardButton:focus, .cardButton:active {  
   text-decoration: none;
-  color: var(--toyota-red);
+  color: var(--toyota-red) !important;
   position: relative;
   z-index: 1;
   margin-right: var(--size-3);
@@ -14,6 +14,10 @@
   font-weight: var(--font-weight-5);
   letter-spacing: var(--font-letterspacing-2);  
   transition: color var(--duration) ease-in-out var(--delay);
+}
+
+a {
+  color: inherit;
 }
 
 .cardButton::before {
@@ -41,5 +45,6 @@
 }
 
 .cardButton:hover {
-  color: white;
+  color: white !important;
+  text-decoration: none !important;
 }
